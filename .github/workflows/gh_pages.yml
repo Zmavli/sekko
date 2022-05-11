@@ -28,7 +28,6 @@ jobs:
         with:
           crate: mdbook
           version: latest
-          use-tool-cache: true
         
       - name: Install mdbook-linkcheck
         if: steps.cache-rust.outputs.cache-hit != 'true'
@@ -36,7 +35,6 @@ jobs:
         with:
           crate: mdbook-linkcheck
           version: latest
-          use-tool-cache: true
 
       - name: Install mdbook-regex-replacer
         if: steps.cache-rust.outputs.cache-hit != 'true'
@@ -44,7 +42,6 @@ jobs:
         with:
           crate: mdbook-regex-replacer
           version: latest
-          use-tool-cache: true
 
       - name: Build book
         run: |
