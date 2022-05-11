@@ -24,15 +24,19 @@ jobs:
 
       - name: Install mdbook
         if: steps.cache-rust.outputs.cache-hit != 'true'
-        run: |
-          curl -LSfs https://japaric.github.io/trust/install.sh | \
-            sh -s -- --git rust-lang/mdBook
-
+        uses: actions-rs/install@v0.1
+        with:
+          crate: mdbook
+          version: latest
+          use-tool-cache: true
+        
       - name: Install mdbook-linkcheck
         if: steps.cache-rust.outputs.cache-hit != 'true'
-        run: |
-          curl -LSfs https://japaric.github.io/trust/install.sh | \
-            sh -s -- --git Michael-F-Bryan/mdbook-linkcheck --tag v0.7.0
+        uses: actions-rs/install@v0.1
+        with:
+          crate: mdbook-linkcheck
+          version: latest
+          use-tool-cache: true
 
       - name: Install mdbook-regex-replacer
         if: steps.cache-rust.outputs.cache-hit != 'true'
