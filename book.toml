@@ -1,0 +1,31 @@
+[book]
+authors = ["zmavli"]
+language = "en"
+multilingual = false
+src = "src"
+title = "aberbanbju"
+
+[output.html]
+mathjax-support = true
+additional-css = [
+    "res/leipzig.min.css",
+    "res/style.css",
+]
+additional-js = [
+    "res/leipzig.min.js",
+    "res/leipzig_apply.js",
+]
+
+[output.linkcheck]
+warning-policy = "error"
+
+[preprocessor.regex-replacer]
+command="mdbook-regex-replacer"
+
+[[preprocessor.regex-replacer.items]]
+regex="<gloss>(?P<content>(?s:.)*?)</gloss>"
+rep="<div data-gloss>\n\n${content}\n</div>"
+
+[[preprocessor.regex-replacer.items]]
+regex="<spoiler>(\r?\n)+(?P<title>(?s:.)*?)(\r?\n){2,}(?P<content>(?s:.)*?)</spoiler>"
+rep="<details><summary>\n\n${title}\n</summary><div>\n\n${content}\n</div></details>"
