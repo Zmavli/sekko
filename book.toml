@@ -1,9 +1,9 @@
 [book]
-authors = ["zmavli"]
+authors = ["Zmavli"]
 language = "en"
 multilingual = false
 src = "src"
-title = "aberbanbju"
+title = "Kenno Zelai Genai Sekkibano"
 
 [output.html]
 mathjax-support = true

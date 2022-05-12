@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "4afe4db9cdf522af",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b38d7ccba00f2bc",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "phonology.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0b45afa33c0a0fd4",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a4859ef2db4233e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "62d3cc5bb06c4594",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "15794abbe93fc4a0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "19c9afd248c7c1b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "a0bfeeed8c69c45f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae1d28528b80987c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "phonology.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "5b38d7ccba00f2bc",
+  "lastOpenFiles": [
+    "phonology.md",
+    "morphosyntax.md",
+    "morphology.md",
+    "intro.md",
+    "dictionary.md",
+    "todo.md",
+    "unsolved-problems.md",
+    "SUMMARY.md",
+    "phonotactics.md",
+    "questions.md"
+  ]
+}

@@ -1,23 +1,3 @@
-[Click here] to open the rendered book.
+**Sekko** is a constructed logical (monoparsing) language with agglutinative morphology. In other words, it is a language created a priori which aims to have each grammatical form (sentence) correspond to one and only one logical form (meaning). Further, it uses affixes on root words rather than using separate words.
 
-## Contributing
-
-This project use [mdBook] which is written in the Rust programming language,
-which you can install by following [this guide].
-
-Then, you can install [mdBook] and a few extensions used by this
-project by running the following command :
-
-```
-cargo install mdbook mdbook-linkcheck mdbook-regex-replacer
-```
-
-To work on the book and have a live preview of the changes, run :
-
-```
-mdbook serve
-```
-
-[Click here]: https://zmavli.github.io/aberbanbju/book/html/index.html
-[mdBook]: https://github.com/rust-lang/mdBook
-[this guide]: https://www.rust-lang.org/tools/install
+You may view the current draft of the whitepaper [Kenno Zelai Genai Sekkibano: A Complete Description of the Structure of the Sekko Language](https://zmavli.github.io/sekko/book/book.html) using the link, typeset using [mdbook](https://rust-lang.github.io/mdBook/)
