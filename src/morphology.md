@@ -10,6 +10,7 @@ Sekko categorizes sounds as either **A**, **B**, or **C**. **A** and **B** sound
 
 The speech stream **baqpakketexoiambanauelromepi** `ACBACAACACCBBCBACCCCCCCCBBBCAB`  can be unambiguously parsed as **baq pakketexoiam banauelrome pi** `ACB ACAACACCBBCB ACCCCCCCBBBC AB`.
 
+Word derivation is usually a priori. However, a posteriori derivation from languages with contrastive vowel and consonant length is permitted (e.g. Finnish, Japanese, Hindi, Latin, etc.).
 
 
 

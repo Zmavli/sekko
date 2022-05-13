@@ -1,15 +1,15 @@
 {
   "main": {
-    "id": "4afe4db9cdf522af",
+    "id": "b662d6d11cfbd2d1",
     "type": "split",
     "children": [
       {
-        "id": "5b38d7ccba00f2bc",
+        "id": "92a74ea0eb217aa8",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "phonology.md",
+            "file": "intro.md",
             "mode": "source"
           }
         }
@@ -18,15 +18,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "0b45afa33c0a0fd4",
+    "id": "80d1ed6fa5545663",
     "type": "split",
     "children": [
       {
-        "id": "2a4859ef2db4233e",
+        "id": "0ed585ecbc319572",
         "type": "tabs",
         "children": [
           {
-            "id": "62d3cc5bb06c4594",
+            "id": "17865f0ee71f47e4",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -34,7 +34,7 @@
             }
           },
           {
-            "id": "15794abbe93fc4a0",
+            "id": "0d074d3c6904e385",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -55,20 +55,20 @@
     "width": 300
   },
   "right": {
-    "id": "19c9afd248c7c1b8",
+    "id": "2a4a22c2ce32a889",
     "type": "split",
     "children": [
       {
-        "id": "a0bfeeed8c69c45f",
+        "id": "8353b3e9f0ceb584",
         "type": "tabs",
         "children": [
           {
-            "id": "ae1d28528b80987c",
+            "id": "f089bbcf69f31007",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "phonology.md",
+                "file": "intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +86,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5b38d7ccba00f2bc",
+  "active": "92a74ea0eb217aa8",
   "lastOpenFiles": [
-    "phonology.md",
-    "morphosyntax.md",
-    "morphology.md",
     "intro.md",
-    "dictionary.md",
-    "todo.md",
-    "unsolved-problems.md",
-    "SUMMARY.md",
-    "phonotactics.md",
-    "questions.md"
+    "dictionary.md"
   ]
 }

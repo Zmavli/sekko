@@ -6,8 +6,8 @@
 - [Morphosyntax](morphosyntax.md)
 ---
 # Part II
-- [Claims of existence]()
-- [Copular sentences]()
+- [Claims of existence](claims-of-existence.md)
+- [Copular sentences](copular-sentences.md)
 - [Transitive predicates]()
 - [Intrasentence anaphors]()
 - [The basic predicate]()
@@ -16,6 +16,9 @@
 ---
 # Part III
 - [Implicature]()
+---
+# Part IV
+- [Numerals](numerals.md)
 ---
 [Unsolved problems](unsolved-problems.md) 
 [Dictionary](dictionary.md)
