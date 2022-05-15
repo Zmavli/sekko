@@ -6,7 +6,7 @@ There is an apple.
 
 {There is} {an apple.}
 
-{∃x:} {apple(x)}
+{\\(∃x:\\)} {\\(apple(x)\\)}
 
 There exists X such that X is an apple.
 </gloss>
@@ -14,7 +14,7 @@ There exists X such that X is an apple.
 Note that although the English translations and examples in this book will usually be in the singular, this is only because English mandates that words be inflected for number. Sekko does not mandate this, and so words may refer to one or more entities. Explicit declarations of number will be covered in [Numerals](numerals.md).
 
 <spoiler>
-What does **∃** or **apple(x)** mean?
+What does \\(∃\\) or \\(apple(x)\\) mean?
 
 In symbolic logic, **∃** represents the existential quantifier and means that there exists at least one thing which fulfills a certain predicate. **∃x:** means "There exists X such that...". The letter "x" is simply a term for a variable.
 	
@@ -28,7 +28,7 @@ seebo
 
 {There is an apple.}
 	
-{∃x: apple(x)}
+{\\(∃x: apple(x)\\)}
 	
 There exists X such that X is an apple.
 </gloss>
