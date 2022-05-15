@@ -1,5 +1,3 @@
-<!-- 0 -->
-
 <div style="font-variant: small-caps; text-align: center">
 
 # Kenno Zelai Genai Sekkibano
@@ -17,6 +15,8 @@ The information in this book may change suddenly due to the language being in it
 In the far future, it is my intention to create a teaching book (which will present Sekko from first principles, and relate its structures to natural language structures), and a reference grammar (which is intended to give a purely technical description of Sekko). Since Sekko is young, this current book will attempt to do both.
 
 Further, because of the two-goal nature of this book, it necessarily is not optimized for either goal. It is recommended that readers re-read earlier chapters, as many chapters are interlinked with one another. The nature of human language, however, forces the book to be arranged sequentially.
+
+Grayed-out chapters are chapters which are currently planned, but have not yet been (completely) written.
 
 
 

@@ -1,9 +1,8 @@
-unsolved problems
-
-- [ ] how to handle ternary predicates
-- [ ] how to handle anaphora beyond sentence boundaries
-- [ ] is there a prettier way to handle multi-predicate properties without needing the opening of a clause
-- [ ] how to handle logical and non-logical connectives (as of current, the following are planned: and, or, xor, xnor)
-- [ ] three dogs bit two children
-- [ ] how to handle universal quantifiers
-- [ ] how to handle scope of >2-component compounds
+# Unsolved problems
+- [ ] Ternary predicates
+- [ ] Anaphora beyond sentence boundaries
+- [ ] Too many clauses?
+- [ ] Connectors/coordinators
+- [ ] Distributivity/collectivity and plural logic
+- [ ] Universal quantifiers and existential import
+- [ ] Tense and aspect system

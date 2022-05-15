@@ -1,3 +1,5 @@
+# Phonology
+
 Sekko features both consonant and vowel gemination. Geminated sounds are notated by writing the same letter twice (e.g. "nn" for /nː/ and "aa" for /aː/). Consonant and vowel charts in IPA are given below, with Latin letter orthography in wide angle brackets.
 ## Consonants
 |             | Labial    | Alveolar | Post-alveolar | Palatal | Velar    | Glottal |

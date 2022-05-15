@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "intro.md",
+            "file": "claims-of-existence.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "intro.md",
+                "file": "claims-of-existence.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +88,15 @@
   },
   "active": "92a74ea0eb217aa8",
   "lastOpenFiles": [
+    "claims-of-existence.md",
+    "copular-sentences.md",
+    "illocutions.md",
     "intro.md",
-    "dictionary.md"
+    "numerals.md",
+    "phonology.md",
+    "phonotactics.md",
+    "SUMMARY.md",
+    "todo.md",
+    "unsolved-problems.md"
   ]
 }
