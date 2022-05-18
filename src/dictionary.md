@@ -22,17 +22,11 @@ kenn: (AP)
 - o: Ⓛ is complete/whole.
 - ai: Ⓛ₀ occurs completely/wholly.
 
-zel: (AP)
-
-
-gen: (AP)
-
-
 sekk: (Japanese: sekkō 石膏, gypsum)
 - o: Ⓛ is Sekkoic.
-- 
 
-ban
+ban: (AP)
+- o: Ⓛ is a language.
 
 sekkiban: (C)
 - o: Ⓛ is the Sekko language.
@@ -59,3 +53,35 @@ b: (AP)
 - iela: Some event changes so as to become Ⓛ₀.
 - uo: Ⓛ₀ changes into Ⓡ₀.
 - ia: Ⓛ₀ changes so as to express Ⓡ₁.
+
+bauk: (Finnish: maukas, delicious)
+- o: Ⓛ is delicious.
+- ola: Ⓛ finds something to be delicious.
+- ai: Ⓛ is delicious to Ⓡ.
+
+rubr: (Latin: ruber, red)
+- o: Ⓛ is red in color.
+
+sed: (Finnish: syödä, to eat)
+- o: Ⓛ eats.
+- ola: Ⓡ is eaten.
+- ai: Ⓛ eats Ⓡ.
+
+k: (AP)
+- o: Ⓛ is I/me/the speaker. (first person pronoun)
+
+het: (Japanese 人 hito, person)
+- o: Ⓛ is a person.
+
+suat: (Finnish istua, to sit)
+- o: Ⓛ is sitting.
+
+kauk: (Finnish kauko-, far away):
+- o: Ⓛ is far away/remote.
+- ai: Ⓛ is far away from Ⓡ.
+
+kul: (Finnish kulkea, to travel):
+- o: Ⓛ is traveling/moving to a place.
+- ola: Ⓛ is being travelled to, is a destination for a traveler.
+- ai: Ⓛ goes/moves/travels to Ⓡ.
+

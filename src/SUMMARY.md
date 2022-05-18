@@ -2,24 +2,24 @@
 [Introduction](intro.md)
 # Part I
 - [Phonology](phonology.md)
-- [Phonotactics](phonotactics.md)
-- [Morphology]()
+- [Morphology](morphology.md)
 ---
 # Part II
 - [Claims of existence](claims-of-existence.md)
 - [Copular sentences](copular-sentences.md)
-- [Transitive predicates]()
+- [Transitive predicates](transitive-predicates.md)
 - [Intrasentence anaphors]()
 - [The basic predicate]()
 - [Illocutions](illocutions.md)
+- [Interrogatives]()
 - [Adverbials]()
 ---
 # Part III
-- [Implicature]()
+- [Contextual implicature]()
 - [Old and new information]()
 ---
 # Part IV
-- [Numerals](numerals.md)
+- [Numerals]()
 - [Names]()
 ---
 [Unsolved problems](unsolved-problems.md) 

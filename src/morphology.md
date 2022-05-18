@@ -1,4 +1,4 @@
-# Phonotactics
+# Morphology
 
 Sekko, due to it being a logical (monoparsing) language, must necessarily have a self-segregating morphology (SSM). An SSM scheme is a system where words are constructed in such a way that word boundaries can be unambiguously determined using only the forms of the words themselves. 
 

@@ -1,4 +1,4 @@
-# Affixes and Particles
+# Affixes and particles
 ## Inherent Suffixes
 ### Intransitive Parametric (Class A1)
 - o: Parametric frame (c) marker.
@@ -24,7 +24,8 @@
 ### Illocutionary (Class B3)
 - n: Assertive (AST) sentence illocution marker.
 - rro: Imperative (IMP) sentence illocution marker.
-- ma: Suggestive (SUG) sentence illocution marker.
+- ma: Interrogative (INT) sentence illocution marker.
+- xai: Suggestive (SUG) sentence illocution marker.
 - le: Performative (PRF) sentence illocution marker.
 ## Special Suffixes
 ### Compounding (Class C1)
