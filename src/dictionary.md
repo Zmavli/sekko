@@ -8,7 +8,10 @@ zel:
 - io: Ⓛ is a description/exegesis/clarification/whitepaper/definition of Ⓡ₀.
 - ie: Ⓛ₀ is described/clarified/defined.
 
-kenn:
+Kanzeno Baakai Daknai Sekkibano
+Sekkibano Baakai Daknai Kanzenole
+
+kanzen: (Japanese  完全, complete)
 - o: Ⓛ is complete/whole.
 - io: Ⓛ₀ occurs completely/wholly.
 
@@ -59,6 +62,11 @@ bauk: (Finnish: maukas, delicious)
 - ola: Ⓛ finds something to be delicious.
 - ai: Ⓛ is delicious to Ⓡ.
 
+pueg: (Reverse of bauk)
+- o: Ⓛ is distasteful/disgusting.
+- ola: Ⓛ finds something to be distasteful/disgusting.
+- ai: Ⓛ is distasteful/disgusting to Ⓡ.
+
 rubr: (Latin: ruber, red)
 - o: Ⓛ is red in color.
 
@@ -80,8 +88,15 @@ kauk: (Finnish kauko-, far away):
 - o: Ⓛ is far away/remote.
 - ai: Ⓛ is far away from Ⓡ.
 
+gueg: (Reverse of kauk)
+- o: Ⓛ is near/close.
+- ai: Ⓛ is near/close to Ⓡ.
+
 kul: (Finnish kulkea, to travel):
 - o: Ⓛ is traveling/moving to a place.
 - ola: Ⓛ is being travelled to, is a destination for a traveler.
 - ai: Ⓛ goes/moves/travels to Ⓡ.
+
+
+
 

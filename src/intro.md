@@ -18,6 +18,6 @@ Further, because of the two-goal nature of this book, it necessarily is not opti
 
 Grayed-out chapters are chapters which are currently planned, but have not yet been (completely) written.
 
-
+View the repository for this book [here](https://github.com/Zmavli/sekko).
 
 
