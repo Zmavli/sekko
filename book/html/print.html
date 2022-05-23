@@ -1,0 +1,551 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Kenno Zelai Genai Sekkibano</title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="res/leipzig.min.css">
+        <link rel="stylesheet" href="res/style.css">
+
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="intro.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Part I</li><li class="chapter-item expanded "><a href="phonology.html"><strong aria-hidden="true">1.</strong> Phonology</a></li><li class="chapter-item expanded "><a href="morphology.html"><strong aria-hidden="true">2.</strong> Morphology</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Part II</li><li class="chapter-item expanded "><a href="claims-of-existence.html"><strong aria-hidden="true">3.</strong> Claims of existence</a></li><li class="chapter-item expanded "><a href="copular-sentences.html"><strong aria-hidden="true">4.</strong> Copular sentences</a></li><li class="chapter-item expanded "><a href="transitive-predicates.html"><strong aria-hidden="true">5.</strong> Transitive predicates</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Intrasentence anaphors</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> The basic predicate</div></li><li class="chapter-item expanded "><a href="illocutions.html"><strong aria-hidden="true">8.</strong> Illocutions</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> Interrogatives</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.</strong> Adverbials</div></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Part III</li><li class="chapter-item expanded "><div><strong aria-hidden="true">11.</strong> Contextual implicature</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.</strong> Old and new information</div></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Part IV</li><li class="chapter-item expanded "><div><strong aria-hidden="true">13.</strong> Numerals</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">14.</strong> Names</div></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="unsolved-problems.html">Unsolved problems</a></li><li class="chapter-item expanded affix "><a href="dictionary.html">Dictionary</a></li><li class="chapter-item expanded affix "><a href="affixes-and-particles.html">Affixes and particles</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Kenno Zelai Genai Sekkibano</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div style="font-variant: small-caps; text-align: center">
+<h1 id="kenno-zelai-genai-sekkibano"><a class="header" href="#kenno-zelai-genai-sekkibano">Kenno Zelai Genai Sekkibano</a></h1>
+<blockquote>
+<p><em>A Textbook for a Logical Language</em><br />
+<em>with an Agglutinative and</em><br />
+<em>Self-Segregating Morphology</em><br />
+— A <s>Complete</s> Description of the<br />
+Structure of the Sekko Language</p>
+</blockquote>
+</div>
+<p>The information in this book may change suddenly due to the language being in its infancy.</p>
+<p>In the far future, it is my intention to create a teaching book (which will present Sekko from first principles, and relate its structures to natural language structures), and a reference grammar (which is intended to give a purely technical description of Sekko). Since Sekko is young, this current book will attempt to do both.</p>
+<p>Further, because of the two-goal nature of this book, it necessarily is not optimized for either goal. It is recommended that readers re-read earlier chapters, as many chapters are interlinked with one another. The nature of human language, however, forces the book to be arranged sequentially.</p>
+<p>Grayed-out chapters are chapters which are currently planned, but have not yet been (completely) written.</p>
+<p>View the repository for this book <a href="https://github.com/Zmavli/sekko">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="phonology"><a class="header" href="#phonology">Phonology</a></h1>
+<p>Sekko features both consonant and vowel gemination. Geminated sounds are notated by writing the same letter twice (e.g. &quot;nn&quot; for /nː/ and &quot;aa&quot; for /aː/). Consonant and vowel charts in IPA are given below, with Latin letter orthography in wide angle brackets.</p>
+<h2 id="consonants"><a class="header" href="#consonants">Consonants</a></h2>
+<table><thead><tr><th style="text-align: left"></th><th style="text-align: center">Labial</th><th style="text-align: center">Alveolar</th><th style="text-align: center">Post-alveolar</th><th style="text-align: center">Palatal</th><th style="text-align: center">Velar</th><th style="text-align: center">Glottal</th></tr></thead><tbody>
+<tr><td style="text-align: left">Nasal</td><td style="text-align: center">m ⟨m⟩</td><td style="text-align: center">n ⟨n⟩</td><td style="text-align: center"></td><td style="text-align: center">(ɲ)</td><td style="text-align: center">ŋ ⟨q⟩</td><td style="text-align: center"></td></tr>
+<tr><td style="text-align: left">Plosive</td><td style="text-align: center">p ⟨p⟩<br>b ⟨b⟩</td><td style="text-align: center">t ⟨t⟩<br>d ⟨d⟩</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">k ⟨k⟩<br>g ⟨g⟩</td><td style="text-align: center">ʔ   ⟨x⟩</td></tr>
+<tr><td style="text-align: left">Fricative</td><td style="text-align: center"></td><td style="text-align: center">s ⟨s⟩<br>z ⟨z⟩</td><td style="text-align: center">ʃ ⟨c⟩<br>ʒ ⟨j⟩</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">h ⟨h⟩</td></tr>
+<tr><td style="text-align: left">Approximant</td><td style="text-align: center">(w)</td><td style="text-align: center"></td><td style="text-align: center">l ⟨l⟩</td><td style="text-align: center">(j)</td><td style="text-align: center"></td><td style="text-align: center"></td></tr>
+<tr><td style="text-align: left">Tap</td><td style="text-align: center"></td><td style="text-align: center">ɾ ⟨r⟩</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center"></td></tr>
+<tr><td style="text-align: left">Trill</td><td style="text-align: center"></td><td style="text-align: center">r ⟨rr⟩</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center"></td></tr>
+</tbody></table>
+<p>The geminated form of <strong>ɾ ⟨r⟩</strong> is <strong>r ⟨rr⟩</strong>. </p>
+<p>The sounds <strong>ɲ</strong>, <strong>ʔ ⟨x⟩</strong>, <strong>h ⟨h⟩</strong>, <strong>w</strong> and <strong>j</strong> are forbidden from geminating, and are canonically pronounced short.</p>
+<h2 id="vowels"><a class="header" href="#vowels">Vowels</a></h2>
+<table><thead><tr><th style="text-align: left"></th><th style="text-align: center">Front</th><th style="text-align: center">Central</th><th style="text-align: center">Back</th></tr></thead><tbody>
+<tr><td style="text-align: left">Close</td><td style="text-align: center">i ⟨i⟩</td><td style="text-align: center"></td><td style="text-align: center">u ⟨u⟩</td></tr>
+<tr><td style="text-align: left">Close-mid</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">o ⟨o⟩</td></tr>
+<tr><td style="text-align: left">Open-mid</td><td style="text-align: center">ε ⟨e⟩</td><td style="text-align: center"></td><td style="text-align: center"></td></tr>
+<tr><td style="text-align: left">Open</td><td style="text-align: center">a ⟨a⟩</td><td style="text-align: center"></td><td style="text-align: center"></td></tr>
+</tbody></table>
+<p>All vowels may geminate. </p>
+<h3 id="diphthongs"><a class="header" href="#diphthongs">Diphthongs</a></h3>
+<p>The following diphthongs are permitted: <strong>iV</strong>, <strong>Vi</strong>, <strong>uV</strong>, <strong>Vu</strong>, where V represents any vowel. It is permitted to pronounce the diphthong either with hiatus (two syllables), or with glide (one syllable). Diphthongs involving <strong>i</strong> use the approximant <strong>j</strong>, and <strong>u</strong> with <strong>w</strong>. </p>
+<p>In the cases where the diphthong is <strong>iV</strong> or <strong>uV</strong>, and the diphthong is pronounced with glide, the preceding consonant will be palatalized or labialized respectively. Sequences of <strong>niV</strong> may be pronounced as <strong>ɲV</strong>.</p>
+<p>N-phthongs are permitted so long as all adjacent vowels are valid diphthongs (i.e. the nucleus <strong>aieua</strong> is permitted as <strong>ai</strong>, <strong>ie</strong>, <strong>eu</strong>, and <strong>ua</strong> are valid diphthongs).</p>
+<p>Vowel gemination is forbidden in diphthongs.</p>
+<h2 id="phonotactics"><a class="header" href="#phonotactics">Phonotactics</a></h2>
+<p>Words cannot begin and end with geminated sounds.</p>
+<p>Words cannot begin with vowels.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="morphology"><a class="header" href="#morphology">Morphology</a></h1>
+<p>Sekko, due to it being a logical (monoparsing) language, must necessarily have a self-segregating morphology (SSM). An SSM scheme is a system where words are constructed in such a way that word boundaries can be unambiguously determined using only the forms of the words themselves. </p>
+<p>While there are a variety of SSM schemes out there, Sekko uses an arbitrary classification of sounds along with a <strong>A+B+</strong> word form. All words contain one or more A components, followed by one or more B components. A word boundary is defined as when a series of <strong>B</strong> sequences makes contact with an <strong>A</strong> component.</p>
+<p>Sekko categorizes sounds as either <strong>A</strong>, <strong>B</strong>, or <strong>C</strong>. <strong>A</strong> and <strong>B</strong> sounds behave as described above. <strong>C</strong> sounds, however, will morph into the sound that immediately precedes them. Therefore, a sequence <code>ACCACBCCC</code> will be interpreted as <code>AAAAABBBB</code>.</p>
+<ul>
+<li><strong>A</strong> sounds: <strong>p t k b d g s z h</strong></li>
+<li><strong>B</strong> sounds: <strong>i o m q</strong></li>
+<li><strong>C</strong> sounds: <strong>a e u n l r x</strong></li>
+</ul>
+<p>The speech stream <strong>baqpakketexoiambanauelromepi</strong> <code>ACBACAACACCBBCBACCCCCCCCBBBCAB</code>  can be unambiguously parsed as <strong>baq pakketexoiam banauelrome pi</strong> <code>ACB ACAACACCBBCB ACCCCCCCBBBC AB</code>.</p>
+<p>Word derivation is usually a priori. However, a posteriori derivation from languages with contrastive vowel and consonant length is permitted (e.g. Finnish, Japanese, Hindi, Latin, etc.).</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="claims-of-existence"><a class="header" href="#claims-of-existence">Claims of existence</a></h1>
+<p>The most basic type of sentence is a claim of existence. In English, they are in the form of &quot;There is/are X&quot;. Let us consider the sentence &quot;There is an apple,&quot; below.</p>
+<div data-gloss>
+<p>There is an apple.</p>
+<p>{There exists some X such that} {X is an apple.}</p>
+<p>{\(∃x:\)} {\(apple(x)\)}</p>
+<p></p>
+</div>
+<p>Note that although the English translations and examples in this book will usually be in the singular, this is only because English mandates that words be inflected for number. Sekko does not mandate this, and so words may refer to one or more entities. Explicit declarations of number will be covered in a later chapter.</p>
+<details><summary>
+<p>What does \(∃\) or \(apple(x)\) mean?</p>
+</summary><div>
+<p>In symbolic logic, \(∃\) represents the existential quantifier and means that there exists at least one thing which fulfills a certain predicate. The letter \(x\) is simply a term for a variable.</p>
+<p>\(apple()\) represents a predicate. Variables are passed into predicates to signify that they fulfill the predicate. Therefore, \(apple(x)\) signifies that the variable X fulfills the property of &quot;being an apple&quot;. It is possible for a predicate to accept multiple variables as arguments.</p>
+</div></details>
+<p>Notice how in the original English sentence, there were two components: the noun phrase &quot;an apple&quot;, and the verb &quot;there is&quot;. In order to claim the existence of something, the noun phrase &quot;an apple&quot; must be passed into the verb. Sekko, in its attempt to hew closer to the underlying logical form of natural languages, existential variables are immediately assumed by default. Therefore, the following Sekko utterance is identical<sup class="footnote-reference"><a href="#note">1</a></sup> to the English sentence above.</p>
+<div data-gloss>
+<p>There is an apple.</p>
+<p>{seebo}</p>
+<p>{\(∃x: apple(x)\)}</p>
+<p>There exists X such that X is an apple.</p>
+</div>
+<p>Merely uttering a predicate in Sekko means asserting that there exists at least one thing which satisfies the predicate. This is the default behavior of Sekko predicates, but there are ways to change this which will be covered in further chapters. </p>
+<div class="footnote-definition" id="note"><sup class="footnote-definition-label">1</sup>
+<p>The Sekko text is termed an &quot;utterance&quot; as it is not yet a sentence -- it has no illocutions, covered in the <a href="illocutions.html">illocutions chapter</a>. Further, as has been said, Sekko does not mandate inflection or agreement for number.</p>
+</div>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="copular-sentences"><a class="header" href="#copular-sentences">Copular sentences</a></h1>
+<p>The second simplest type of sentence is the copular sentence, which in English takes on the form of &quot;X is Y&quot;. Let us consider the following sentence.</p>
+<div data-gloss>
+<p>An apple is red.</p>
+<p>{seebo} {rubro}</p>
+<p>{\(∃x: apple(x),\)} {\(red(x)\)}</p>
+<p>There exists X such that X is an apple, and is red.</p>
+</div>
+<p>Notice that the same variable, \(x\) is being passed as an argument into both predicates. This permits us to make multiple claims on the same variable. We are claiming that \(x\) is <em>both</em> an apple <em>and</em> red.</p>
+<p>The grammar of Sekko is different from that in English. Notice that there is no copula in the Sekko sentence -- there is no equivalent to &quot;is&quot;. One of Sekko's goals is to have a grammar that has a more similar form to the underlying logical structure than natural languages. </p>
+<p>The way predicates work in Sekko is such that each predicate &quot;expresses&quot; variables on both its left (preceding) and right (succeeding) sides. Such variables are implicit and cannot be accessed directly. Variables which the predicate is in contact with will be passed into it as arguments. Both <strong>seebo</strong> and <strong>rubro</strong> are <em>intransitive</em> predicates, and express the same variable on both sides. Because of this, the sentence is the same even if the order of words is reversed. You may see this in the defitions of <strong>seebo</strong> and <strong>rubro</strong> -- they possess only Ⓛ (left) slots. We will see predicates with Ⓡ (right) slots in the next chapter. Predicates with only Ⓛ slots are intransitive, and express the same variable on the left and right slots.</p>
+<p>The following sentence is identical to the one before. Here, how the implicit variables are handled is exposed to you.</p>
+<div data-gloss>
+<p>A red thing is an apple.</p>
+<p>{\(x\) rubro \(x\)} {\(x\) seebo \(x\)}</p>
+<p>{\(∃x: red(x),\)} {\(apple(x)\)}</p>
+<p>There exists X such that X is red, and is an apple.</p>
+</div>
+<p>In English, the sentences &quot;An apple is red,&quot; and &quot;A red thing is an apple,&quot; would be interpreted differently, because of how subjects and objects in English are treated as old and new information. This is covered in a later chapter. However, Sekko does not make the distinction between old and new information, and so considers both utterances to be the same.</p>
+<p>It is permitted in Sekko to pass the same variable in as many predicates as is desired. So long as the implicit variable is in contact with the predicates, they will be passed into it.</p>
+<div data-gloss>
+<p>An apple is red and delicious. </p>
+<p>{\(x\) seebo \(x\)} {\(x\) rubro \(x\)} {\(x\) bauko \(x\)}</p>
+<p>{\(∃x: apple(x),\)} {\(red(x),\)} {\(delicious(x)\)}</p>
+<p>There exists X such that X is an apple, is red, and is delicious.</p>
+</div>
+<p>As with the sentences above, the order of the predicates does not matter. </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="transitive-predicates"><a class="header" href="#transitive-predicates">Transitive predicates</a></h1>
+<p>We now get into the meat and potatoes of Sekko grammar. Transitive predicates, compared to intransitive predicates, do not express the same variable on both sides. Whereas intransitive predicates assert that the variable on both their sides are equal, transitive predicates assert that they are unequal. Let us see this in action.</p>
+<div data-gloss>
+<p>I eat an apple.</p>
+<p>{ko} {sedai} {seebo}</p>
+<p>{\(∃x∃y: me(x),\)} {\(eat(x,y),\)} {\(apple(y)\)}</p>
+<p>There exist \(x\) and \(y\) such that \(x\) is me, and eats \(y\), and \(y\) is eaten, and is an apple.</p>
+</div>
+<div data-gloss>
+<p>An apple eats me.</p>
+<p>{seebo} {sedai} {ko}</p>
+<p>{\(∃x∃y: apple(x),\) } {\(eat(x,y),\)} {\(me(y)\)}</p>
+<p>There exist \(x\) and \(y\) such that \(x\) is an apple, and eats \(y\), and \(y\) is eaten, and is me.</p>
+</div>
+<div data-gloss>
+<p>An apple, who is me, eats (something).</p>
+<p>{seebo} {ko} {sedai}</p>
+<p>{\(∃x∃y: me(x),\) } {\(apple(x),\)} {\(eat(x,y)\)}</p>
+<p>There exist \(x\) and \(y\) such that \(x\) is an apple, and me, and eats \(y\), and \(y\) is eaten.</p>
+</div>
+<p>The difference in the meanings of the sentences is because transitive predicates accept two variables rather than one. The variable on the left is treated differently from the variable on the right. This can be seen from the definition of <strong>sedai</strong>.</p>
+<blockquote>
+<p>sedai: Ⓛ eats Ⓡ.</p>
+</blockquote>
+<p><strong>sedai</strong> possesses both an Ⓛ slot and an Ⓡ slot -- it expresses two different variables on both sides. </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="illocutions"><a class="header" href="#illocutions">Illocutions</a></h1>
+<p>We are ready now to make true sentences in Sekko. All of the &quot;sentences&quot; thus far have been termed utterances, for they are not true sentences. True sentences in Sekko <em>must</em> contain an illocution. An illocution, also known as a speech act, determines what the purpose of the utterance is. Utterances may, for example, be simply stating information, or desiring information, or commanding. Sekko illocution suffixes also function as sentence fences. Illocution markers in Sekko are mandatory and always attach to the first word of the sentence. Given this, Sekko sentence boundaries can also be unambiguously determined.</p>
+<p>The most basic illocution in Sekko is the <em>assertive</em> illocution <code>-n</code>, glossed as (AST). It marks the sentence as merely a bare assertion. All of the utterances we have examined thus far implicitly took on the assertive illocution.</p>
+<div data-gloss>
+<p>An apple is red.</p>
+<p>{Seebon} {rubro.}</p>
+<p>{\(∃x: apple(x),\)} {\(red(x)\)}</p>
+<p>I assert that: There exists X such that X is an apple, and is red.</p>
+</div>
+<p>The <em>imperative</em> (IMP) <code>-rro</code> illocution marks the sentence as being a command or demand, with the implicit threat of punishment or negative consequences if the command is not made true.</p>
+<div data-gloss>
+<p>(You) get away from me!</p>
+<p>{Dorro} {kulai} {kaukai} {ko!}</p>
+<p>{\(∃x∃y∃z: you(x),\)} {\(travel(x,y),\)} {\(far(y,z),\)} {\(me(z)\)} </p>
+<p>I command that: There exists X, Y, and Z such that X is you, and travels to Y and Y is far from Z, and Z is me.</p>
+</div>
+<p>The <em>suggestive</em> (SUG) illocution <code>-le</code> is similar to the imperative illocution, in that it expresses a desire for something to be made true. However, unlike the imperative, it does not contain an implicit threat. When the suggestive illocution is used, it is being claimed that the interlocutor may decline or refuse to bring about the desired state without retribution or negative consequence. The suggestive illocution can be made for requests, offers, or as the name suggests, suggestions.</p>
+<div data-gloss>
+<p>(You) please sit./I suggest you sit./I request you sit./I offer for you to sit.</p>
+<p>{Dole} {suato.}</p>
+<p>{\(∃x: you(x),\)} {\(sitting(x)\)}</p>
+<p>I suggest that: There exists X such that X is you, and is sitting.</p>
+</div>
+<p>The <em>interrogative</em> (INT) illocution <code>-ma</code> marks the sentence as a question. How a language handles question syntax is of particular importance, and so interrogatives are given their own chapter.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="unsolved-problems"><a class="header" href="#unsolved-problems">Unsolved problems</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Ternary predicates</li>
+<li><input disabled="" type="checkbox"/>
+Anaphora beyond sentence boundaries</li>
+<li><input disabled="" type="checkbox"/>
+Too many clauses?</li>
+<li><input disabled="" type="checkbox"/>
+Connectors/coordinators</li>
+<li><input disabled="" type="checkbox"/>
+Distributivity/collectivity and plural logic</li>
+<li><input disabled="" type="checkbox"/>
+Universal quantifiers and existential import</li>
+<li><input disabled="" type="checkbox"/>
+Tense and aspect system</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="dictionary"><a class="header" href="#dictionary">Dictionary</a></h1>
+<p>This dictionary is currently not sorted alphabetically. Dictionary entries may have incomplete definitions. Words may be suddenly redefined or given different wordforms.</p>
+<p>zel:</p>
+<ul>
+<li>o: Ⓛ is a description/exegesis/clarification/whitepaper/definition.</li>
+<li>ola: Ⓛ is described/clarified/defined.</li>
+<li>ai: Ⓛ is a description/exegesis/clarification/whitepaper/definition of Ⓡ.</li>
+<li>io: Ⓛ is a description/exegesis/clarification/whitepaper/definition of Ⓡ₀.</li>
+<li>ie: Ⓛ₀ is described/clarified/defined.</li>
+</ul>
+<p>Kanzeno Baakai Daknai Sekkibano
+Sekkibano Baakai Daknai Kanzenole</p>
+<p>kanzen: (Japanese  完全, complete)</p>
+<ul>
+<li>o: Ⓛ is complete/whole.</li>
+<li>io: Ⓛ₀ occurs completely/wholly.</li>
+</ul>
+<p>gen:</p>
+<ul>
+<li>o: Ⓛ is a shape/form/structure/system; Ⓛ has a shape/form/structure/system.</li>
+<li>ai: Ⓛ is the shape/form/structure/system of Ⓡ; Ⓛ has the same shape/form/structure/system as Ⓡ.</li>
+<li>io: Ⓛ is the shape/form/structure/system of Ⓡ₀; Ⓛ has the same shape/form/structure/system as Ⓡ₀.</li>
+<li>ie: Ⓛ₀ has a shape/form/structure.</li>
+</ul>
+<p>kenn: (AP)</p>
+<ul>
+<li>o: Ⓛ is complete/whole.</li>
+<li>ai: Ⓛ₀ occurs completely/wholly.</li>
+</ul>
+<p>sekk: (Japanese: sekkō 石膏, gypsum)</p>
+<ul>
+<li>o: Ⓛ is Sekkoic.</li>
+</ul>
+<p>ban: (AP)</p>
+<ul>
+<li>o: Ⓛ is a language.</li>
+</ul>
+<p>sekkiban: (C)</p>
+<ul>
+<li>o: Ⓛ is the Sekko language.</li>
+</ul>
+<p>h: (AP)</p>
+<ul>
+<li>o (c): Ⓛ is something.</li>
+<li>ai (c c): Ⓛ is related to Ⓡ in an unspecified way.</li>
+<li>io (c 0): Ⓛ is involved in Ⓡ₀ in an unspecified way.</li>
+<li>ui (c 1):  Ⓛ expresses property Ⓡ₁.</li>
+<li>ie (0): Ⓛ₀ is the case.</li>
+<li>uo (0 0): Ⓛ₀ is related to Ⓡ₀ in an unspecified way.</li>
+<li>ia (0 1): Ⓛ₀ expresses property Ⓡ₁.</li>
+<li>aqa (1): Ⓛ is a property.</li>
+</ul>
+<p>seeb: (Hindi: sēb सेब, apple)</p>
+<ul>
+<li>o (c): Ⓛ is an apple.</li>
+</ul>
+<p>b: (AP)</p>
+<ul>
+<li>o: Ⓛ changes.</li>
+<li>ola: Something changes so as to become Ⓛ.</li>
+<li>ai: Ⓛ changes so as to become Ⓡ.</li>
+<li>ui: Ⓛ changes so as to express Ⓡ₁.</li>
+<li>ie: Ⓛ₀ changes.</li>
+<li>iela: Some event changes so as to become Ⓛ₀.</li>
+<li>uo: Ⓛ₀ changes into Ⓡ₀.</li>
+<li>ia: Ⓛ₀ changes so as to express Ⓡ₁.</li>
+</ul>
+<p>bauk: (Finnish: maukas, delicious)</p>
+<ul>
+<li>o: Ⓛ is delicious.</li>
+<li>ola: Ⓛ finds something to be delicious.</li>
+<li>ai: Ⓛ is delicious to Ⓡ.</li>
+</ul>
+<p>pueg: (Reverse of bauk)</p>
+<ul>
+<li>o: Ⓛ is distasteful/disgusting.</li>
+<li>ola: Ⓛ finds something to be distasteful/disgusting.</li>
+<li>ai: Ⓛ is distasteful/disgusting to Ⓡ.</li>
+</ul>
+<p>rubr: (Latin: ruber, red)</p>
+<ul>
+<li>o: Ⓛ is red in color.</li>
+</ul>
+<p>sed: (Finnish: syödä, to eat)</p>
+<ul>
+<li>o: Ⓛ eats.</li>
+<li>ola: Ⓡ is eaten.</li>
+<li>ai: Ⓛ eats Ⓡ.</li>
+</ul>
+<p>k: (AP)</p>
+<ul>
+<li>o: Ⓛ is I/me/the speaker. (first person pronoun)</li>
+</ul>
+<p>het: (Japanese 人 hito, person)</p>
+<ul>
+<li>o: Ⓛ is a person.</li>
+</ul>
+<p>suat: (Finnish istua, to sit)</p>
+<ul>
+<li>o: Ⓛ is sitting.</li>
+</ul>
+<p>kauk: (Finnish kauko-, far away):</p>
+<ul>
+<li>o: Ⓛ is far away/remote.</li>
+<li>ai: Ⓛ is far away from Ⓡ.</li>
+</ul>
+<p>gueg: (Reverse of kauk)</p>
+<ul>
+<li>o: Ⓛ is near/close.</li>
+<li>ai: Ⓛ is near/close to Ⓡ.</li>
+</ul>
+<p>kul: (Finnish kulkea, to travel):</p>
+<ul>
+<li>o: Ⓛ is traveling/moving to a place.</li>
+<li>ola: Ⓛ is being travelled to, is a destination for a traveler.</li>
+<li>ai: Ⓛ goes/moves/travels to Ⓡ.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="affixes-and-particles"><a class="header" href="#affixes-and-particles">Affixes and particles</a></h1>
+<h2 id="inherent-suffixes"><a class="header" href="#inherent-suffixes">Inherent Suffixes</a></h2>
+<h3 id="intransitive-parametric-class-a1"><a class="header" href="#intransitive-parametric-class-a1">Intransitive Parametric (Class A1)</a></h3>
+<ul>
+<li>o: Parametric frame (c) marker.</li>
+<li>ie: Parametric frame (0) marker.</li>
+<li>aqa: Parametric frame (1) marker.</li>
+</ul>
+<h3 id="transitive-parametric-class-a2"><a class="header" href="#transitive-parametric-class-a2">Transitive Parametric (Class A2)</a></h3>
+<ul>
+<li>ai: Parametric frame (c c) marker.</li>
+<li>io: Parametric frame (c 0) marker.</li>
+<li>ui: Parametric frame (c 1) marker.</li>
+<li>uo: Parametric frame (0 0) marker.</li>
+<li>ia: Parametric frame (0 1) marker.</li>
+</ul>
+<h3 id="negating-class-a3"><a class="header" href="#negating-class-a3">Negating (Class A3)</a></h3>
+<ul>
+<li>na: Negates predicate (¬).</li>
+</ul>
+<h3 id="voicing-class-a4"><a class="header" href="#voicing-class-a4">Voicing (Class A4)</a></h3>
+<ul>
+<li>la: For intransitive predicates, changes the meaning of the predicate to express the -la definition. For transitive predicates, reverses the order of arguments.</li>
+</ul>
+<h2 id="free-suffixes"><a class="header" href="#free-suffixes">Free Suffixes</a></h2>
+<h3 id="clausal-class-b1"><a class="header" href="#clausal-class-b1">Clausal (Class B1)</a></h3>
+<ul>
+<li>cu: Starts a standard clause to the right.</li>
+<li>ra: Starts an indirect question clause to the right.</li>
+</ul>
+<h3 id="adverbial-class-b2"><a class="header" href="#adverbial-class-b2">Adverbial (Class B2)</a></h3>
+<ul>
+<li>me: Marks predicate as being a simple adverb (does not open an adverbial clause).</li>
+<li>li: Marks predicate as being a complex adverb (opens an adverbial clause).</li>
+</ul>
+<h3 id="illocutionary-class-b3"><a class="header" href="#illocutionary-class-b3">Illocutionary (Class B3)</a></h3>
+<ul>
+<li>n: Assertive (AST) sentence illocution marker.</li>
+<li>rro: Imperative (IMP) sentence illocution marker.</li>
+<li>ma: Interrogative (INT) sentence illocution marker.</li>
+<li>xai: Suggestive (SUG) sentence illocution marker.</li>
+<li>le: Performative (PRF) sentence illocution marker.</li>
+</ul>
+<h2 id="special-suffixes"><a class="header" href="#special-suffixes">Special Suffixes</a></h2>
+<h3 id="compounding-class-c1"><a class="header" href="#compounding-class-c1">Compounding (Class C1)</a></h3>
+<ul>
+<li>i: Marks previous predicate as being bound to the next predicate in a compound word.</li>
+<li>ini: Same as -i, but induce strong binding.</li>
+</ul>
+<h3 id="nominal-class-c2"><a class="header" href="#nominal-class-c2">Nominal (Class C2)</a></h3>
+<ul>
+<li>ei: Marks previous predicate as being a native Sekko name, with the definition <code>&quot;Ⓛ is named &quot;Name&quot;</code>. May accept either c or 0 arguments.</li>
+</ul>
+<h3 id="numeric-class-c3"><a class="header" href="#numeric-class-c3">Numeric (Class C3)</a></h3>
+<ul>
+<li>mi: Cardinal numeral marker.</li>
+</ul>
+<h2 id="particles"><a class="header" href="#particles">Particles</a></h2>
+<h3 id="terminators-class-d1"><a class="header" href="#terminators-class-d1">Terminators (Class D1)</a></h3>
+<ul>
+<li>tam: Terminates standard or indirect question clause.</li>
+<li>deq: Terminates adverbial clause.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="res/leipzig.min.js"></script>
+        <script type="text/javascript" src="res/leipzig_apply.js"></script>
+
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
+        });
+        </script>
+
+    </body>
+</html>
